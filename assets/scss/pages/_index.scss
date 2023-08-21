@@ -1,14 +1,16 @@
 .nav{
   /*   border:1px solid black; */
   position: fixed;
-  min-width: 200px;
+  min-width: 296px;
   min-height: 100vh;
-
 }
 
 .main{
-  margin-left: 200px;
+  margin-left: 296px;
+  min-height: 100vh;
 }
+
+
 .nav-link{
   padding: 12px 32px !important;
   position: relative;
@@ -28,4 +30,12 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.text-success {
+  color: #198754 !important;
 }

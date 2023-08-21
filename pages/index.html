@@ -14,7 +14,7 @@
   <body>
     <nav class="nav flex-column justify-content-between bg-light">
       <div class="">
-        <img class="p-5" src="../assets/images/logo-ANSWER.svg" alt="logo">
+        <img class="p-5" src="../assets/images/logo-ANSWER.svg" alt="logo"><h1 class="d-none">ANSWER</h1>
         <a class="nav-link link-dark d-flex align-middle fw-bold" aria-current="page" href="#"> 
           <span class="material-icons me-3">
             assessment
@@ -41,7 +41,7 @@
         </a>
         <a class="nav-link link-success d-flex active align-middle fw-bold" aria-current="page" href="#"> 
           <span class="material-icons me-3">
-            group
+            supervisor_account
           </span>
           Admin
         </a>
@@ -53,25 +53,224 @@
         </a>
       </div>
       <div class="d-flex p-5">
-        <a href="#" class="align-self-center"><img class="person-pic me-3" src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80" alt="person-pic"></a>
-        <div>
+        <a href="#" class="align-self-center"><img class="person-pic" src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80" alt="person-pic"></a>
+        <div class="ms-3">
           <a href="#" class="d-block fw-bold">Andy Chen</a>
-          <a href="#" class="d-block text-secondary font-size-sm">andy0401@mail.com</a>
+          <a href="#" class="d-block text-secondary fs-6">andy0401@mail.com</a>
         </div>
       </div>
-      
     </nav>
-    <div class="main">
-
-  
+    <div class="main d-flex flex-column justify-content-between ">
+      <div class="">
+        <div class="p-5 d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <p class="pe-6 mb-0 fs-4">Admin</p>
+            <a href="#" class="d-flex align-items-center">
+              <span class="material-icons me-2 text-success">
+                add
+              </span>
+              <span class="fw-bold">Add New Admin</span>
+            </a>
+          </div>
+          <div class="d-flex h-100">
+            <a href="#" class="h-100">
+              <span class="material-icons me-4 pt-2 pb-2">
+                search
+              </span>
+            </a>
+            <a href="#" class="">
+              <span class="material-icons pt-2 pb-2">
+                notifications_active
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="ms-4 me-4 mt-3">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="fw-bold flex align-items-baseline">
+                  <span>ID</span>
+                  <span class="material-icons text-success fs-18 ms-2">
+                    arrow_downward
+                  </span>
+                </th>
+                <th scope="col" class="fw-bold">Name</th>
+                <th scope="col" class="fw-bold">Email</th>
+                <th scope="col" class="fw-bold">Verified</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">#1</th>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">#2</th>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">#3</th>
+                <td>Mahima Lopez</td>
+                <td>mahima.lopez@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">#4</th>
+                <td>Pharrell Murray</td>
+                <td>pharrell.murray@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">#5</th>
+                <td>Annika Mcbride</td>
+                <td>annika.mcbride@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">#6</th>
+                <td>Fatimah Clark</td>
+                <td>fatimah.clark@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">#7</th>
+                <td>Klaudia Rhodes</td>
+                <td>klaudia.rhodes@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">#8</th>
+                <td>Tillie Lucero</td>
+                <td>tillie.lucero@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">#9</th>
+                <td>Sabrina Stephenson</td>
+                <td>sabrina.stephenson@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+              <tr>
+                <th scope="row">#10</th>
+                <td>Annie Smith</td>
+                <td>annie.smith@mail.com</td>
+                <td>Yes</td>
+                <th class="text-end">
+                  <span class="material-icons me-4">
+                    visibility
+                  </span>
+                  <span class="material-icons">
+                    edit
+                  </span>
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
       </div>
+      <nav aria-label="Page navigation example" class="d-flex flex-row-reverse me-4 pb-3">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   
       <!-- Modal 按鈕 -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         打開 modal
-      </button>
-    </div>
+      </button> -->
+    
 
 
     <!-- Modal 元件 -->
