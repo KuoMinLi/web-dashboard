@@ -86,19 +86,21 @@
           </div>
         </div>
         <div class="ms-4 me-4 mt-3">
-          <table class="table">
+          <table class="table table-hover">
             <thead>
-              <tr>
-                <th scope="col" class="fw-bold flex align-items-baseline">
-                  <span>ID</span>
-                  <span class="material-icons text-success fs-18 ms-2">
-                    arrow_downward
-                  </span>
+              <tr class="border-bottom border-1 border-dark">
+                <th scope="col" class="fw-bold ">
+                  <a href="" class="d-flex align-middle">
+                    ID
+                    <span class="material-icons ms-2 text-success">
+                      arrow_downward
+                    </span>
+                  </a>
                 </th>
                 <th scope="col" class="fw-bold">Name</th>
                 <th scope="col" class="fw-bold">Email</th>
                 <th scope="col" class="fw-bold">Verified</th>
-                <th></th>
+                <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
@@ -108,9 +110,12 @@
                 <td>emir.wicks@mail.com</td>
                 <td>Yes</td>
                 <th class="text-end">
-                  <span class="material-icons me-4">
-                    visibility
-                  </span>
+                  <!-- Modal 按鈕 -->
+                  <a href="#">
+                    <span class="material-icons me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      visibility
+                    </span>
+                  </a>
                   <span class="material-icons">
                     edit
                   </span>
@@ -251,28 +256,20 @@
         <ul class="pagination">
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
+              <span class="text-success fw-bold" aria-hidden="true">&lt;</span>
             </a>
           </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
+              <span class="text-success fw-bold" aria-hidden="true">&gt;</span>
             </a>
           </li>
         </ul>
       </nav>
     </div>
-  
-      <!-- Modal 按鈕 -->
-      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        打開 modal
-      </button> -->
-    
-
-
     <!-- Modal 元件 -->
     <div
       class="modal fade"
@@ -281,16 +278,25 @@
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog-centered container">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="card">
+            <div class="p-5 row">
+              <img class="col-4"  src="https://images.unsplash.com/photo-1522069394066-326005dc26b2?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=1350&q=80" alt="girl">
+              <div class="col-8">
+                <div class="position-relative">
+                  <p class="card-title">#1</p>
+                  <span class="card-text">Admin</span>
+                  <h4 class="fw-bold">Emir Wicks</h4>
+                  <p class="text-gray-600 fs-6">emir.wicks@mail.com</p>
+                  <button type="button" class="border-0 py-1 px-2 mt-1">Verified</button>
+                  <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <span class="position-absolute bottom-0 end-0 material-icons text-success">
+                    expand_more
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
